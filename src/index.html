@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Nommerplaat game!</title>
+    <link rel="stylesheet" href="index.css">
+    <script defer src="render.js"></script>
+  </head>
+  <body>
+    
+    <h1 id="heading"> NommerplaatGuessr </h1>
+
+    <div>
+      <button onclick="generateRandomImage()">START</button>
+      <button onclick="cheat()">CHEAT</button>
+    </div>
+
+    <div class="image-container">
+      <img width=600 height=400 id="main-image"/>
+      <img width=600 height=400 id="secondary-image"/>
+    </div>
+
+    <div class="answers">
+      <button id="0" onclick="handleAnswer(0)">Kaapstad</button>
+      <button id="1" onclick="handleAnswer(1)">Kaapstad (EXTENDED)</button>
+      <button id="2" onclick="handleAnswer(2)">George (EXTENDED)</button>
+      <button id="3" onclick="handleAnswer(3)">Caledon & Kleinmond</button>
+      <button id="4" onclick="handleAnswer(4)">Citrusdal & Clanwilliam & Lambertsbaai & Graafwater</button>
+      <button id="5" onclick="handleAnswer(5)">George</button>
+      <button id="6" onclick="handleAnswer(6)">Ladismith</button>
+      <button id="7" onclick="handleAnswer(7)">Laingsburg</button>
+      <button id="8" onclick="handleAnswer(8)">Montagu</button>
+      <button id="9" onclick="handleAnswer(9)">Mosselbaai & Hartenbos</button>
+      <button id="10" onclick="handleAnswer(10)">Murraysburg</button>
+      <button id="11" onclick="handleAnswer(11)">Piketberg</button>
+      <button id="12" onclick="handleAnswer(12)">Prins Albert</button>
+      <button id="13" onclick="handleAnswer(13)">Riversdal & Stilbaai</button>
+      <button id="14" onclick="handleAnswer(14)">Robertson & McGregor</button>
+      <button id="15" onclick="handleAnswer(15)">Swellendam & Barrydale</button>
+      <button id="16" onclick="handleAnswer(16)">Tulbagh</button>
+      <button id="17" onclick="handleAnswer(17)">Uniondale</button>
+      <button id="18" onclick="handleAnswer(18)">Van Rhynsdorp</button>
+      <button id="19" onclick="handleAnswer(19)">Kaapstad Munisipaliteit</button>
+      <button id="20" onclick="handleAnswer(20)">Moorreesburg</button>
+      <button id="21" onclick="handleAnswer(21)">Heidelberg</button>
+      <button id="22" onclick="handleAnswer(22)">Hermanus & Gansbaai & Onrus & Stanford</button>
+      <button id="23" onclick="handleAnswer(23)">Grabouw & Elgin</button>
+      <button id="24" onclick="handleAnswer(24)">Bonnievale</button>
+      <button id="25" onclick="handleAnswer(25)">Albertinia</button>
+      <button id="26" onclick="handleAnswer(26)">Porterville</button>
+      <button id="27" onclick="handleAnswer(27)">Strand & Gordonsbaai</button>
+      <button id="28" onclick="handleAnswer(28)">Kuils River & Brackenfell & Kraaifontein</button>
+      <button id="29" onclick="handleAnswer(29)">Wolseley</button>
+      <button id="30" onclick="handleAnswer(30)">Vredenburg & Saldanha & St Helena Baai</button>
+      <button id="31" onclick="handleAnswer(31)">Somerset-Wes</button>
+      <button id="32" onclick="handleAnswer(32)">Velddrif & Laaiplek</button>
+      <button id="33" onclick="handleAnswer(33)">Kuils River & Brackenfell (OLD)</button>
+      <button id="34" onclick="handleAnswer(34)">Oudtshoorn</button>
+      <button id="35" onclick="handleAnswer(35)">Paarl</button>
+      <button id="36" onclick="handleAnswer(36)">Malmesbury & Darling</button>
+      <button id="37" onclick="handleAnswer(37)">Stellenbosch & Franschhoek</button>
+      <button id="38" onclick="handleAnswer(38)">Wellington</button>
+      <button id="39" onclick="handleAnswer(39)">Calitzdorp</button>
+      <button id="40" onclick="handleAnswer(40)">Hopefield & Langebaan</button>
+      <button id="41" onclick="handleAnswer(41)">Bredasdorp & Napier</button>
+      <button id="42" onclick="handleAnswer(42)">Ceres</button>
+      <button id="43" onclick="handleAnswer(43)">Vredendal</button>
+      <button id="44" onclick="handleAnswer(44)">Worcester & De Doorns & Touws River</button>
+      <button id="45" onclick="handleAnswer(45)">Knysna & Sedgefield & Plettenberg Bay</button>
+      <button id="46" onclick="handleAnswer(46)">Bellville & Durbanville & Parow & Goodwood</button>
+      <button id="47" onclick="handleAnswer(47)">Beaufort-Wes</button>
+    </div>
+
+    <div class="score">
+      <h1 id="count">0 / 0</h1>
+      <h1 id="percentage">0%</h1>
+    </div>
+
+    <div id="klaar">
+      <h2>FINISHED!</h2>
+      <p id="finalPercentage">persentasie</p>
+      <p id="finalScore">score</p>
+    </div>
+
+
+  </body>
+</html>
